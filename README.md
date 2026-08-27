@@ -335,7 +335,7 @@ API Key가 없으면 요청 전에 오류를 발생시키며, 네트워크 요�
 
 ## 현재 범위와 확장 아이디어
 
-현재 구현은 학습 범위를 명확히 하기 위해 세 도시를 코드에 고정하고, 요청 시점의 현재 날씨만 제공합니다. 자동 갱신, 위치 기반 조회, 예보, 테스트 코드는 포함되어 있지 않습니다.
+현재 구현은 학습 범위를 명확히 하기 위해 세 도시를 코드에 고정하고, 요청 시점의 현재 날씨만 제공합니다.
 
 다음 기능을 추가하며 프로젝트를 확장할 수 있습니다.
 
@@ -348,18 +348,3 @@ API Key가 없으면 요청 전에 오류를 발생시키며, 네트워크 요�
 - Vitest와 Vue Test Utils 기반 단위·컴포넌트 테스트 추가
 - Playwright 기반 라우팅과 사용자 흐름 E2E 테스트 추가
 
-## 처음 코드를 읽는 순서
-
-프로젝트를 처음 살펴본다면 다음 순서를 권장합니다.
-
-1. `src/main.js` — 앱에 등록된 플러그인 확인
-2. `src/App.vue` — 공통 레이아웃과 라우트 출력 위치 확인
-3. `src/router/index.js` — URL과 화면의 연결 확인
-4. `src/views/WeatherHomeView.vue` — 홈 화면 진입점 확인
-5. `src/components/weather/WeatherDashboard.vue` — 목록의 상태와 이벤트 흐름 확인
-6. `src/services/weatherApi.js` — 데이터가 어디서 어떤 형태로 들어오는지 확인
-7. `src/components/weather/WeatherCard.vue` — props/emit과 composable 사용 확인
-8. `src/stores/configStore.js`와 `src/composables/useTemperature.js` — 전역 상태와 파생 값 확인
-9. `src/views/WeatherDetailView.vue` — 라우트 파라미터 기반 상세 조회 확인
-
-이 순서대로 보면 **앱 시작 → 라우팅 → 화면 상태 → API 데이터 → 컴포넌트 통신 → 전역 상태**의 흐름을 자연스럽게 따라갈 수 있습니다.

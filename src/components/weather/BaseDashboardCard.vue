@@ -10,14 +10,21 @@
 
 <style scoped>
 .dashboard-card {
-  margin-bottom: 16px;
-  padding: 20px;
-  border: 1px solid #dcdfe6;
-  border-radius: 10px;
-  background: #ffffff;
+  margin-bottom: 20px;
+  padding: 22px 24px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
 }
 
 .dashboard-card__title {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
+}
+
+.dashboard-card__title :deep(h2) {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--color-text);
 }
 </style>

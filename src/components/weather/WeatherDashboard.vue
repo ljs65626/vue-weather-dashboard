@@ -76,3 +76,24 @@ function goDetail(cityId) {
     <p class="status-bar">{{ selectedCityInfo }}</p>
   </div>
 </template>
+
+<style scoped>
+.status-bar {
+  margin-top: 4px;
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  background: #ecfdf5;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+  text-align: center;
+  font-size: 0.92rem;
+}
+
+.error-message {
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: var(--color-danger);
+}
+</style>
